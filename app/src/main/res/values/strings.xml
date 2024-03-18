@@ -97,11 +97,10 @@
         <item>Ordo Saurischia dari superordo Dinosauria.</item>
     </string-array>
 
-
     <string name="info_dino_icon">Ikon Dino</string>
     <string name="info_dino_name">Nama Dino</string>
     <string name="info_dino_desc">Deskripsi</string>
-    <string name="info_dino_characteristic">Karakteristik </string>
+    <string name="info_dino_characteristic">Karakteristik</string>
     <string name="info_dino_kelompok">Kelompok</string>
     <string name="info_dino_habitat">Habitat</string>
     <string name="info_dino_makanan">Makanan</string>
@@ -113,56 +112,199 @@
     <string-array name="dinos_name">
         <item>Apatosaurus</item>
         <item>Brachiosaurus</item>
+        <item>Tyrannosaurus Rex</item>
+        <item>Velociraptor</item>
+        <item>Parasaurolophus</item>
+        <item>Edmontosaurus</item>
+        <item>Triceratops</item>
+        <item>Styracosaurus</item>
+        <item>Stegosaurus</item>
+        <item>Ankylosaurus</item>
+        <item>Euoplocephalus</item>
+        <item>Pteranodon</item>
+        <item>Quetzalcoatlus</item>
+        <item>Allosaurus</item>
+        <item>Diplodocus</item>
     </string-array>
 
     <string-array name="dinos_icon">
         <item>@drawable/apatosaurus</item>
-        <item>@drawable/brachiosaurus</item>
+        <item>@drawable/apatosaurus</item>
+        <item>@drawable/apatosaurus</item>
+        <item>@drawable/apatosaurus</item>
+        <item>@drawable/apatosaurus</item>
+        <item>@drawable/apatosaurus</item>
+        <item>@drawable/apatosaurus</item>
+        <item>@drawable/apatosaurus</item>
+        <item>@drawable/apatosaurus</item>
+        <item>@drawable/apatosaurus</item>
+        <item>@drawable/apatosaurus</item>
+        <item>@drawable/apatosaurus</item>
+        <item>@drawable/apatosaurus</item>
+        <item>@drawable/apatosaurus</item>
+        <item>@drawable/apatosaurus</item>
     </string-array>
 
     <string-array name="dinos_description">
         <item>Apatosaurus adalah dinosaurus herbivora yang besar dengan leher panjang dan ekor yang pendek. Mereka memiliki tubuh besar dengan empat kaki kuat.</item>
         <item>Brachiosaurus adalah dinosaurus raksasa yang memiliki leher panjang yang membantu mereka meraih makanan dari pohon-pohon tinggi.</item>
+        <item>Tyrannosaurus Rex adalah dinosaurus karnivora yang sangat besar dengan gigi dan rahang yang kuat, serta cakar yang besar.</item>
+        <item>Velociraptor adalah dinosaurus karnivora yang kecil dan gesit dengan cakar yang tajam dan gigi yang runcing.</item>
+        <item>Parasaurolophus adalah dinosaurus herbivora yang memiliki crests besar di atas kepala mereka yang digunakan untuk berkomunikasi dan pengaturan suhu tubuh.</item>
+        <item>Edmontosaurus adalah dinosaurus herbivora yang memiliki moncong yang runcing dan gigi yang digunakan untuk mengunyah tumbuhan.</item>
+        <item>Triceratops adalah dinosaurus herbivora yang terkenal dengan tiga tanduk besar di atas kepala mereka dan perisai di bagian belakang tengkorak.</item>
+        <item>Styracosaurus adalah dinosaurus herbivora yang memiliki tanduk-tanduk besar di atas tengkorak mereka, serta perisai di bagian belakangnya.</item>
+        <item>Stegosaurus adalah dinosaurus herbivora yang terkenal dengan lempeng-lempeng besar di punggung mereka dan duri-duri di ekor mereka.</item>
+        <item>Ankylosaurus adalah dinosaurus herbivora yang memiliki lapisan tulang keras di seluruh tubuh mereka, serta tulang ekor yang berduri untuk pertahanan.</item>
+        <item>Euoplocephalus adalah dinosaurus herbivora yang memiliki tubuh yang ditutupi oleh lapisan tulang keras dan berduri untuk melindungi diri dari serangan predator.</item>
+        <item>Pteranodon adalah reptil terbang prasejarah yang memiliki sayap besar dan leher panjang yang memungkinkan mereka untuk berburu ikan di laut.</item>
+        <item>Quetzalcoatlus adalah salah satu pterosaur terbesar yang pernah hidup, dengan rentang sayap yang sangat besar yang memungkinkannya terbang jauh.</item>
+        <item>Allosaurus adalah dinosaurus karnivora yang besar dan kuat dengan gigi yang tajam dan cakar yang kuat untuk menyerang mangsa.</item>
+        <item>Diplodocus adalah dinosaurus herbivora yang sangat besar dengan leher yang panjang dan ekor yang pendek, serta tubuh yang ramping.</item>
     </string-array>
 
     <string-array name="dinos_characteristic">
         <item>Leher panjang, tubuh besar, kaki kuat, ekor pendek.</item>
         <item>Leher panjang yang tegak, tubuh besar, kaki depan yang lebih panjang dari kaki belakang.</item>
+        <item>Raksasa, gigi besar, rahang kuat, cakar besar, tubuh besar yang berotot.</item>
+        <item>Kecil, lincah, cakar tajam, gigi runcing, berkemampuan berburu dalam kelompok.</item>
+        <item>Crests besar di kepala, tubuh besar, kaki kuat, herbivora.</item>
+        <item>Moncong runcing, gigi pengunyah, tubuh besar, herbivora.</item>
+        <item>Tiga tanduk besar, perisai di tengkorak, tubuh besar, herbivora.</item>
+        <item>Tanduk-tanduk besar, perisai di tengkorak, tubuh besar, herbivora.</item>
+        <item>Lempeng-lempeng di punggung, duri di ekor, tubuh besar, herbivora.</item>
+        <item>Lapisan tulang keras, tulang ekor berduri, tubuh besar, herbivora.</item>
+        <item>Lapisan tulang keras, tubuh berduri, herbivora.</item>
+        <item>Sayap besar, leher panjang, tubuh kecil, reptil terbang.</item>
+        <item>Rentang sayap besar, tubuh besar, reptil terbang.</item>
+        <item>Tubuh besar, cakar kuat, gigi tajam, karnivora.</item>
+        <item>Tubuh panjang, leher panjang, ekor pendek, herbivora.</item>
     </string-array>
 
     <string-array name="dinos_kelompok">
-        <item>Sauropodomorpha.</item>
-        <item>Sauropodomorpha.</item>
+        <item>Sauropodomorpha</item>
+        <item>Sauropodomorpha</item>
+        <item>Theropoda</item>
+        <item>Theropoda</item>
+        <item>Ornithopoda</item>
+        <item>Ornithopoda</item>
+        <item>Ceratopsia</item>
+        <item>Ceratopsia</item>
+        <item>Thyreophora</item>
+        <item>Thyreophora</item>
+        <item>Thyreophora</item>
+        <item>Pterosauria</item>
+        <item>Pterosauria</item>
+        <item>Saurischia</item>
+        <item>Saurischia</item>
     </string-array>
 
     <string-array name="dinos_habitat">
-        <item> Daerah daratan yang luas dengan vegetasi banyak.</item>
-        <item> Daratan luas dengan vegetasi tinggi</item>
+        <item>Daerah daratan yang luas dengan vegetasi banyak.</item>
+        <item>Daratan luas dengan vegetasi tinggi.</item>
+        <item>Berbagai tipe habitat, mulai dari dataran rendah hingga daerah berhutan.</item>
+        <item>Daerah dataran rendah dengan vegetasi yang cukup.</item>
+        <item>Daerah rawa-rawa dan dataran rendah dengan vegetasi yang tinggi.</item>
+        <item>Padang rumput dan daerah rawa-rawa dengan vegetasi melimpah.</item>
+        <item>Daerah padang rumput dan dataran rendah dengan vegetasi tinggi.</item>
+        <item>Daerah dataran tinggi dengan vegetasi yang melimpah.</item>
+        <item>Hutan-hutan berdaun lebar dan dataran rendah dengan vegetasi tinggi.</item>
+        <item>Padang rumput dan dataran rendah dengan vegetasi yang rendah.</item>
+        <item>Hutan-hutan lebat dan daerah rawa-rawa dengan vegetasi melimpah.</item>
+        <item>Pesisir laut dan daerah pantai dengan akses ke air.</item>
+        <item>Daerah dataran terbuka dan daerah pesisir dengan akses ke air.</item>
+        <item>Daerah hutan dan daerah berbukit dengan vegetasi melimpah.</item>
+        <item>Daerah dataran tinggi dan daerah berbukit dengan vegetasi melimpah.</item>
     </string-array>
 
     <string-array name="dinos_makanan">
-        <item>Tumbuhan seperti daun dan pucuk pohon</item>
+        <item>Tumbuhan seperti daun dan pucuk pohon.</item>
         <item>Daun dan tanaman tinggi.</item>
+        <item>Dinosaurus dan hewan-hewan besar lainnya.</item>
+        <item>Buruan kecil dan hewan-hewan lain yang bisa mereka tangkap.</item>
+        <item>Tanaman rendah dan tumbuhan air.</item>
+        <item>Tumbuhan tinggi dan rendah.</item>
+        <item>Tanaman rendah dan daun-daunan.</item>
+        <item>Tumbuhan tinggi dan daun-daunan.</item>
+        <item>Daun-daunan dan tanaman rendah.</item>
+        <item>Tumbuhan rendah dan akar-akaran.</item>
+        <item>Daun-daunan dan tanaman rendah.</item>
+        <item>Ikan dan hewan kecil lainnya yang ditemukan di air.</item>
+        <item>Diperkirakan memakan hewan kecil, mungkin ikan dan hewan darat kecil.</item>
+        <item>Dinosaurus dan hewan besar lainnya.</item>
+        <item>Tanaman tinggi dan daun-daunan.</item>
     </string-array>
 
     <string-array name="dinos_panjang">
-        <item>21–27 meter.</item>
-        <item>22–30 meter.</item>
+        <item>Sekitar 21–27 meter.</item>
+        <item>Sekitar 22–30 meter.</item>
+        <item>Sekitar 12–13 meter.</item>
+        <item>Sekitar 1.8–2 meter.</item>
+        <item>Sekitar 9–10 meter.</item>
+        <item>Sekitar 9–13 meter.</item>
+        <item>Sekitar 8–9 meter.</item>
+        <item>Sekitar 5.5–6 meter.</item>
+        <item>Sekitar 9–12 meter.</item>
+        <item>Sekitar 6–8 meter.</item>
+        <item>Sekitar 6–7 meter.</item>
+        <item>Sekitar 6 meter (termasuk sayap).</item>
+        <item>Sekitar 10–11 meter (termasuk sayap).</item>
+        <item>Sekitar 8–9 meter.</item>
+        <item>Sekitar 24–27 meter.</item>
     </string-array>
 
     <string-array name="dinos_tinggi">
-        <item>4.5–5.5 meter.</item>
-        <item>13–16 meter.</item>
+        <item>Sekitar 4.5–5.5 meter.</item>
+        <item>Sekitar 13–16 meter.</item>
+        <item>Sekitar 4–6 meter.</item>
+        <item>Sekitar 0.5–0.6 meter.</item>
+        <item>Sekitar 2.5–3 meter.</item>
+        <item>Sekitar 3–4 meter.</item>
+        <item>Sekitar 3–4 meter.</item>
+        <item>Sekitar 2.5–3 meter.</item>
+        <item>Sekitar 4–4.5 meter.</item>
+        <item>Sekitar 1.5–2 meter.</item>
+        <item>Sekitar 2–2.5 meter.</item>
+        <item>Sekitar 1–1.5 meter.</item>
+        <item>Sekitar 3–4 meter.</item>
+        <item>Sekitar 3–3.5 meter.</item>
+        <item>Sekitar 4–5 meter.</item>
     </string-array>
 
     <string-array name="dinos_bobot">
-        <item>16–22 ton.</item>
-        <item>30–60 ton.</item>
+        <item>Sekitar 16–22 ton.</item>
+        <item>Sekitar 30–60 ton.</item>
+        <item>Sekitar 8–14 ton.</item>
+        <item>Sekitar 15–20 kg.</item>
+        <item>Sekitar 2–3.5 ton.</item>
+        <item>Sekitar 3–5 ton.</item>
+        <item>Sekitar 6–12 ton.</item>
+        <item>Sekitar 3–4 ton.</item>
+        <item>Sekitar 5–7 ton.</item>
+        <item>Sekitar 4–6 ton.</item>
+        <item>Sekitar 2–3 ton.</item>
+        <item>Sekitar 20–40 kg.</item>
+        <item>Sekitar 200–250 kg.</item>
+        <item>Sekitar 2–3 ton.</item>
+        <item>Sekitar 10–16 ton.</item>
     </string-array>
 
     <string-array name="dinos_kelemahan">
         <item>Tidak terlalu gesit dalam bergerak dan rentan terhadap predator karena ukurannya yang besar.</item>
         <item>Tidak terlalu gesit dalam bergerak dan ukurannya yang besar membuatnya rentan terhadap predator.</item>
+        <item>Kecepatannya yang rendah dalam bergerak horizontal, serta rentan terhadap serangan dari dinosaurus lain yang lebih cepat.</item>
+        <item>Ukurannya yang kecil membuatnya rentan terhadap predator lain dan kemampuannya yang kurang efektif dalam menyerang mangsa yang besar.</item>
+        <item>Rentan terhadap serangan predator karena ukurannya yang besar dan kurangnya perlindungan fisik yang kuat.</item>
+        <item>Rentan terhadap predator karena ukurannya yang besar dan kemampuan defensif yang terbatas.</item>
+        <item>Meskipun memiliki perlindungan yang kuat dengan tanduk dan perisai, Triceratops masih rentan terhadap serangan predator yang kuat.</item>
+        <item>Meskipun memiliki perlindungan yang kuat, Styracosaurus masih rentan terhadap serangan predator yang kuat.</item>
+        <item>Rentan terhadap serangan predator karena perlindungan fisik yang terbatas di bagian perut dan leher mereka.</item>
+        <item>Meskipun memiliki perlindungan yang kuat, Ankylosaurus masih rentan terhadap serangan predator dari bagian yang tidak dilindungi, seperti perut dan leher.</item>
+        <item>Meskipun memiliki perlindungan yang kuat, Euoplocephalus masih rentan terhadap serangan predator yang kuat dari bagian yang tidak dilindungi.</item>
+        <item>Rentan terhadap serangan predator saat di darat karena tidak bisa bergerak dengan cepat.</item>
+        <item>Rentan terhadap predator saat di darat karena ukurannya yang besar dan kemampuan bergerak yang terbatas.</item>
+        <item>Meskipun kuat, Allosaurus rentan terhadap serangan dari dinosaurus lain yang lebih besar atau berkelompok.</item>
+        <item>Meskipun besar, Diplodocus rentan terhadap predator karena kecepatannya yang lambat dan ukuran tubuhnya yang besar.</item>
     </string-array>
 
 </resources>
