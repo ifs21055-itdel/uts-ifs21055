@@ -1,0 +1,168 @@
+<resources>
+    <string name="app_name">Dino Pedia</string>
+    <string name="info_family_icon">Ikon Family</string>
+    <string name="info_family_name">Nama Family</string>
+    <string name="info_family_desc">Deskripsi</string>
+    <string name="info_family_periode">Periode Hidup</string>
+    <string name="info_family_characteristic">Karakteristik Fisik</string>
+    <string name="info_family_habitat">Habitat</string>
+    <string name="info_family_perilaku">Perilaku</string>
+    <string name="info_family_klasifikasi">Klasifikasi</string>
+
+    <string-array name="familys_name">
+        <item>Sauropodomorpha</item>
+        <item>Theropoda</item>
+        <item>Ornithopoda</item>
+        <item>Ceratopsia</item>
+        <item>Thyreophora</item>
+        <item>Ankylosauria</item>
+        <item>Pterosauria</item>
+        <item>Saurischia</item>
+    </string-array>
+
+    <string-array name="familys_icon">
+        <item>@drawable/sauropodomorpha</item>
+        <item>@drawable/theropoda</item>
+        <item>@drawable/ornithopoda</item>
+        <item>@drawable/ceratopsia</item>
+        <item>@drawable/thyreophora</item>
+        <item>@drawable/ankylosauria</item>
+        <item>@drawable/pterosauria</item>
+        <item>@drawable/saurischia</item>
+    </string-array>
+
+    <string-array name="familys_description">
+        <item>Sauropodomorpha adalah kelompok dinosaurus yang terkenal dengan ukuran tubuhnya yang besar dan leher panjang. Mereka termasuk beberapa dinosaurus herbivora terbesar yang pernah hidup.</item>
+        <item>Theropoda adalah kelompok dinosaurus yang umumnya dikenal sebagai pemakan daging. Mereka memiliki ciri khas sebagai pemburu yang efisien.</item>
+        <item>Ornithopoda adalah kelompok dinosaurus herbivora yang dikenal dengan gigi-gigi yang mirip burung.</item>
+        <item>Ceratopsia adalah kelompok dinosaurus herbivora yang memiliki ciri khas tanduk dan piring di tengkorak mereka.</item>
+        <item>Thyreophora adalah kelompok dinosaurus herbivora yang dilindungi oleh duri atau lempengan tulang yang terletak di tubuh mereka.</item>
+        <item>Ankylosauria adalah kelompok dinosaurus herbivora yang memiliki tubuh yang dilindungi oleh duri dan lempengan tulang.</item>
+        <item>Pterosauria adalah kelompok reptil terbang purba yang memiliki sayap membran.</item>
+        <item>Saurischia adalah kelompok dinosaurus yang memiliki ciri khas struktur panggul mirip reptil modern.</item>
+    </string-array>
+
+    <string-array name="familys_periode">
+        <item>Periode Triassic hingga Jurassic.</item>
+        <item>Mulai dari Periode Triassic hingga Kepunahan Cretaceous-Paleogene.</item>
+        <item>Sebagian besar dari Periode Jurassic hingga Kepunahan Cretaceous-Paleogene.</item>
+        <item>Mulai dari akhir Periode Jurassic hingga Kepunahan Cretaceous-Paleogene.</item>
+        <item>Mulai dari Periode Jurassic hingga Kepunahan Cretaceous-Paleogene.</item>
+        <item>Mulai dari Periode Jurassic hingga Kepunahan Cretaceous-Paleogene.</item>
+        <item>Mulai dari Periode Triassic hingga Kepunahan Cretaceous-Paleogene.</item>
+        <item>Mulai dari Periode Triassic hingga Kepunahan Cretaceous-Paleogene.</item>
+    </string-array>
+
+    <string-array name="familys_characteristic">
+        <item>Tubuh besar, leher panjang, dan kepala kecil.</item>
+        <item>Rangka yang ringan dan aerodinamis, kaki yang panjang, dan gigi tajam.</item>
+        <item>Rangka yang ringan, kaki yang panjang, dan gigi berbentuk tanduk.</item>
+        <item>Tanduk di kepala dan piring di tengkorak, tubuh besar dengan kaki yang kuat.</item>
+        <item>Tubuh dilindungi oleh duri atau lempengan tulang, kaki yang kuat.</item>
+        <item>Tubuh yang sangat dilindungi dengan duri dan lempengan tulang, ekor berduri besar.</item>
+        <item>Sayap membran, kaki yang panjang, dan paruh yang mirip dengan burung.</item>
+        <item>Rangka yang besar, struktur panggul khas, dan kaki yang kuat.</item>
+    </string-array>
+
+    <string-array name="familys_habitat">
+        <item>Biasanya ditemukan di daerah berhutan dan lahan basah.</item>
+        <item>Berbagai habitat termasuk daratan, hutan, dan rawa-rawa.</item>
+        <item>Umumnya hidup di daerah terbuka seperti padang rumput dan dataran banjir.</item>
+        <item>Umumnya hidup di daerah yang kaya vegetasi seperti hutan-hutan.</item>
+        <item>Umumnya ditemukan di dataran tinggi atau padang rumput yang luas.</item>
+        <item>Umumnya ditemukan di dataran yang luas atau hutan terbuka.</item>
+        <item>Umumnya ditemukan di daerah pesisir dan pantai.</item>
+        <item>Beragam, dari hutan hingga daerah terbuka.</item>
+    </string-array>
+
+    <string-array name="familys_perilaku">
+        <item>Mereka mungkin bergerombol atau berkelompok untuk mencari makanan.</item>
+        <item>Biasanya adalah predator yang aktif, berburu dalam kelompok kecil atau sendiri.</item>
+        <item>Mungkin hidup dalam kawanan besar untuk melindungi diri dari pemangsa.</item>
+        <item>Mungkin hidup dalam kelompok kecil atau berpasangan.</item>
+        <item>Mungkin hidup secara berkelompok atau secara soliter.</item>
+        <item>Mungkin hidup secara soliter dan cenderung bersikap defensif.</item>
+        <item>Aktif terbang untuk mencari makanan seperti ikan atau invertebrata kecil.</item>
+        <item>Beragam, tergantung pada subkelompoknya, termasuk pemangsa aktif dan herbivora pasif.</item>
+    </string-array>
+
+    <string-array name="familys_klasifikasi">
+        <item>Subordo Sauropodomorpha dari ordo Saurischia.</item>
+        <item>Subordo Theropoda dari ordo Saurischia.</item>
+        <item>Infraordo Ornithopoda dari ordo Ornithischia.</item>
+        <item>Infraordo Ceratopsia dari ordo Ornithischia.</item>
+        <item>Infraordo Thyreophora dari ordo Ornithischia.</item>
+        <item>Ordo Ankylosauria dari infrakelas Ornithischia.</item>
+        <item>Kelas Pterosauria dari filum Chordata.</item>
+        <item>Ordo Saurischia dari superordo Dinosauria.</item>
+    </string-array>
+
+
+    <string name="info_dino_icon">Ikon Dino</string>
+    <string name="info_dino_name">Nama Dino</string>
+    <string name="info_dino_desc">Deskripsi</string>
+    <string name="info_dino_characteristic">Karakteristik </string>
+    <string name="info_dino_kelompok">Kelompok</string>
+    <string name="info_dino_habitat">Habitat</string>
+    <string name="info_dino_makanan">Makanan</string>
+    <string name="info_dino_panjang">Panjang</string>
+    <string name="info_dino_tinggi">Tinggi</string>
+    <string name="info_dino_bobot">Bobot</string>
+    <string name="info_dino_kelemahan">Kelemahan</string>
+
+    <string-array name="dinos_name">
+        <item>Apatosaurus</item>
+        <item>Brachiosaurus</item>
+    </string-array>
+
+    <string-array name="dinos_icon">
+        <item>@drawable/apatosaurus</item>
+        <item>@drawable/brachiosaurus</item>
+    </string-array>
+
+    <string-array name="dinos_description">
+        <item>Apatosaurus adalah dinosaurus herbivora yang besar dengan leher panjang dan ekor yang pendek. Mereka memiliki tubuh besar dengan empat kaki kuat.</item>
+        <item>Brachiosaurus adalah dinosaurus raksasa yang memiliki leher panjang yang membantu mereka meraih makanan dari pohon-pohon tinggi.</item>
+    </string-array>
+
+    <string-array name="dinos_characteristic">
+        <item>Leher panjang, tubuh besar, kaki kuat, ekor pendek.</item>
+        <item>Leher panjang yang tegak, tubuh besar, kaki depan yang lebih panjang dari kaki belakang.</item>
+    </string-array>
+
+    <string-array name="dinos_kelompok">
+        <item>Sauropodomorpha.</item>
+        <item>Sauropodomorpha.</item>
+    </string-array>
+
+    <string-array name="dinos_habitat">
+        <item> Daerah daratan yang luas dengan vegetasi banyak.</item>
+        <item> Daratan luas dengan vegetasi tinggi</item>
+    </string-array>
+
+    <string-array name="dinos_makanan">
+        <item>Tumbuhan seperti daun dan pucuk pohon</item>
+        <item>Daun dan tanaman tinggi.</item>
+    </string-array>
+
+    <string-array name="dinos_panjang">
+        <item>21–27 meter.</item>
+        <item>22–30 meter.</item>
+    </string-array>
+
+    <string-array name="dinos_tinggi">
+        <item>4.5–5.5 meter.</item>
+        <item>13–16 meter.</item>
+    </string-array>
+
+    <string-array name="dinos_bobot">
+        <item>16–22 ton.</item>
+        <item>30–60 ton.</item>
+    </string-array>
+
+    <string-array name="dinos_kelemahan">
+        <item>Tidak terlalu gesit dalam bergerak dan rentan terhadap predator karena ukurannya yang besar.</item>
+        <item>Tidak terlalu gesit dalam bergerak dan ukurannya yang besar membuatnya rentan terhadap predator.</item>
+    </string-array>
+
+</resources>
