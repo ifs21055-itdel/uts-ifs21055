@@ -3,6 +3,8 @@ package com.ifs21055.dinopedia
 import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -19,6 +21,22 @@ class MainActivity : AppCompatActivity() {
         binding.rvFamily.setHasFixedSize(false)
         datafamilys.addAll(getListfamilys())
         showRecyclerList()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.menu_about -> {
+                // Membuat intent untuk memulai ProfileActivity
+                val intent = Intent(this, ProfileActivity::class.java)
+                startActivity(intent)
+                return true
+            }
+            else -> return super.onOptionsItemSelected(item)
+        }
     }
 
     private fun getListfamilys(): ArrayList<Family> {

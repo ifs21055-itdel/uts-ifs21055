@@ -14,15 +14,18 @@ class DinotailActivity : AppCompatActivity() {
         binding = ActivityDinotailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Menampilkan tombol back di action bar
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         // Mendapatkan data Dino dari intent
         dino = intent.getParcelableExtra(EXTRA_DINO)
 
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
+        // Memeriksa apakah data Dino tidak null sebelum memanggil loadData
         if (dino != null) {
             supportActionBar?.title = "Dino ${dino!!.name}"
             loadData(dino!!)
         } else {
+            // Jika data Dino tidak ditemukan, tutup aktivitas
             finish()
         }
     }
@@ -43,13 +46,14 @@ class DinotailActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
+        return when (item.itemId) {
+            // Handling untuk tombol back di action bar
             android.R.id.home -> {
                 finish()
-                return true
+                true
             }
+            else -> super.onOptionsItemSelected(item)
         }
-        return super.onOptionsItemSelected(item)
     }
 
     companion object {
