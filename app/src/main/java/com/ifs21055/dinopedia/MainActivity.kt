@@ -1,5 +1,6 @@
 package com.ifs21055.dinopedia
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
@@ -12,14 +13,15 @@ import com.ifs21055.dinopedia.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    private val datafamilys = ArrayList<Family>()
+    private val dataKeluarga = ArrayList<Keluarga>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.rvFamily.setHasFixedSize(false)
-        datafamilys.addAll(getListfamilys())
+
+        binding.rvKeluarga.setHasFixedSize(false)
+        dataKeluarga.addAll(getListKeluarga())
         showRecyclerList()
     }
 
@@ -39,54 +41,70 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun getListfamilys(): ArrayList<Family> {
-        val dataName = resources.getStringArray(R.array.familys_name)
-        val dataIcon = resources.obtainTypedArray(R.array.familys_icon)
-        val dataDescription = resources.getStringArray(R.array.familys_description)
-        val dataPeriode = resources.getStringArray(R.array.familys_periode)
-        val dataCharacteristic = resources.getStringArray(R.array.familys_characteristic)
-        val dataHabitat = resources.getStringArray(R.array.familys_habitat)
-        val dataPerilaku = resources.getStringArray(R.array.familys_perilaku)
-        val dataKlasifikasi = resources.getStringArray(R.array.familys_klasifikasi)
+    @SuppressLint("Recycle")
+    private fun getListKeluarga(): ArrayList<Keluarga> {
+        val dataName =
+            resources.getStringArray(R.array.keluargas_name)
+        val dataIcon =
+            resources.obtainTypedArray(R.array.keluargas_icon)
+        val dataDescription =
+            resources.getStringArray(R.array.keluargas_description)
+        val dataPeriode =
+            resources.getStringArray(R.array.keluargas_periode)
+        val dataKarakteristik =
+            resources.getStringArray(R.array.keluargas_characteristic)
+        val dataHabitat =
+            resources.getStringArray(R.array.keluargas_habitat)
+        val dataPerilaku =
+            resources.getStringArray(R.array.keluargas_perilaku)
+        val dataKlasifikasi =
+            resources.getStringArray(R.array.keluargas_klasifikasi)
+        val dataStartIndex =
+            resources.getStringArray(R.array.start_dino_array)
+        val dataEndIndex =
+            resources.getStringArray(R.array.end_dino_array)
 
-        val listfamily = ArrayList<Family>()
+        val listKeluarga = ArrayList<Keluarga>()
         for (i in dataName.indices) {
-            val family = Family(
+            val keluarga = Keluarga(
                 dataName[i],
                 dataIcon.getResourceId(i, -1),
                 dataDescription[i],
                 dataPeriode[i],
-                dataCharacteristic[i],
+                dataKarakteristik[i],
                 dataHabitat[i],
                 dataPerilaku[i],
-                dataKlasifikasi[i]
-            )
-            listfamily.add(family)
+                dataKlasifikasi[i],
+                dataStartIndex[i].toInt(),
+                dataEndIndex[i].toInt())
+            listKeluarga.add (keluarga)
         }
-        return listfamily
+        return listKeluarga
     }
 
     private fun showRecyclerList() {
-        val orientation = resources.configuration.orientation
-        binding.rvFamily.layoutManager = if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
+        if (resources.configuration.orientation ==
+            Configuration.ORIENTATION_LANDSCAPE) { binding.rvKeluarga.layoutManager =
             GridLayoutManager(this, 2)
         } else {
-            LinearLayoutManager(this)
+            binding.rvKeluarga.layoutManager =
+                LinearLayoutManager(this)
         }
-
-        val listfamilyAdapter = ListFamilyAdapter(datafamilys)
-        binding.rvFamily.adapter = listfamilyAdapter
-
-        listfamilyAdapter.setOnItemClickCallback(object : ListFamilyAdapter.OnItemClickCallback {
-            override fun onItemClicked(data: Family) {
-                showSelectedfamily(data)
+        val listkeluargaAdapter = ListKeluargaAdapter(dataKeluarga)
+        binding.rvKeluarga.adapter = listkeluargaAdapter
+        listkeluargaAdapter.setOnItemClickCallback(object :
+            ListKeluargaAdapter.OnItemClickCallback {
+            override fun onItemClicked(data: Keluarga) {
+                showSelectedKeluarga(data)
             }
         })
     }
 
-    private fun showSelectedfamily(family: Family) {
-        val intentWithData = Intent(this@MainActivity, DetailActivity::class.java)
-        intentWithData.putExtra(DetailActivity.EXTRA_FAMILY, family)
+    private fun showSelectedKeluarga(keluarga: Keluarga) {
+        val intentWithData = Intent(
+            this@MainActivity,
+            DetailActivity::class.java)
+        intentWithData.putExtra (DetailActivity.EXTRA_KELUARGA, keluarga)
         startActivity(intentWithData)
     }
 }

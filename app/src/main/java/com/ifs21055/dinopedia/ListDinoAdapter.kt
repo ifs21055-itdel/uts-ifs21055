@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.ifs21055.dinopedia.databinding.ItemRowDinoBinding
 
-class ListDinoAdapter(private val listdino: ArrayList<Dino>) :
+class ListDinoAdapter(private val listDino: ArrayList<Dino>) :
     RecyclerView.Adapter<ListDinoAdapter.ListViewHolder>() {
     private lateinit var onItemClickCallback: OnItemClickCallback
     fun setOnItemClickCallback(onItemClickCallback:
@@ -22,15 +22,15 @@ class ListDinoAdapter(private val listdino: ArrayList<Dino>) :
     }
     @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        val dino = listdino[position]
+        val dino = listDino[position]
         holder.binding.ivItemDino.setImageResource(dino.icon)
         holder.binding.tvItemDino.text = dino.name
         holder.itemView.setOnClickListener {
-            onItemClickCallback.onItemClicked(listdino[holder.adapterPosition])
+            onItemClickCallback.onItemClicked(listDino[holder.adapterPosition])
         }
     }
 
-    override fun getItemCount(): Int = listdino.size
+    override fun getItemCount(): Int = listDino.size
     class ListViewHolder(var binding: ItemRowDinoBinding) :
         RecyclerView.ViewHolder(binding.root)
     interface OnItemClickCallback {

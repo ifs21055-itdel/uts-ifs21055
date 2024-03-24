@@ -1,65 +1,83 @@
 package com.ifs21055.dinopedia
+
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
+import android.view.Menu
 import android.view.MenuItem
-import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.ifs21055.dinopedia.databinding.ActivityDetailBinding
 
 class DetailActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailBinding
-    private var family: Family? = null
-
+    private var keluarga: Keluarga? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Mendapatkan data Family dari intent
-        family = intent.getParcelableExtra(EXTRA_FAMILY)
+        val btnDino = findViewById<TextView>(R.id.buttondino)
+        btnDino.setOnClickListener {
+            val intent = Intent(this, DinoActivity::class.java)
+            startActivity(intent)
+        }
 
+        binding.buttondino.setOnClickListener{
+            val intentWithData = Intent(this@DetailActivity, DinoActivity::class.java)
+            intentWithData.putExtra(DinoActivity.EXTRA_KELUARGA, keluarga!!)
+            startActivity(intentWithData)
+        }
+
+        keluarga = if (Build.VERSION.SDK_INT >= 33) {
+            intent.getParcelableExtra(EXTRA_KELUARGA,Keluarga::class.java)
+        } else {
+            @Suppress("DEPRECATION")
+            intent.getParcelableExtra(EXTRA_KELUARGA)
+        }
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
-        if (family != null) {
-            supportActionBar?.title = "Family ${family!!.name}"
-            loadData(family!!)
+        if (keluarga != null) {
+            supportActionBar?.title = "Keluarga ${keluarga!!.name}"
+            loadData(keluarga!!)
         } else {
             finish()
         }
-
-        // Menambahkan event listener untuk tombol "LIHAT DINO"
-        val buttonLihatDino: Button = findViewById(R.id.button)
-        buttonLihatDino.setOnClickListener {
-            // Membuat intent untuk membuka MainActivity
-            val intent = Intent(this@DetailActivity, DinoActivity::class.java)
-            // Memulai activity MainActivity
-            startActivity(intent)
-        }
     }
 
-    private fun loadData(family: Family) {
-        // Mengisi data ke tampilan berdasarkan objek Family
-        binding.ivDetailIcon.setImageResource(family.icon)
-        binding.tvDetailName.text = family.name
-        binding.tvDetailDescription.text = family.description
-        binding.tvDetailPeriode.text = family.periode
-        binding.tvDetailCharacteristic.text = family.characteristic
-        binding.tvDetailHabitat.text = family.habitat
-        binding.tvDetailPerilaku.text = family.perilaku
-        binding.tvDetailKlasifikasi.text = family.klasifikasi
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true
     }
-
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            android.R.id.home -> {
-                finish()
-                return true
+        return when (item.itemId) {
+            R.id.menu_about -> {
+                // Membuat intent untuk memulai ProfileActivity
+                val intent = Intent(this, ProfileActivity::class.java)
+                startActivity(intent)
+                true
             }
+            android.R.id.home -> {
+                finish() // Menutup aktivitas saat tombol kembali ditekan
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
         }
-        return super.onOptionsItemSelected(item)
     }
+
+
+    private fun loadData(keluarga: Keluarga) {
+        binding.ivDetailIcon.setImageResource(keluarga.icon)
+        binding.tvDetailName.text = keluarga.name
+        binding.tvDetailDescription.text = keluarga.description
+        binding.tvDetailPeriode.text = keluarga.periode
+        binding.tvDetailCharacteristic.text = keluarga.characteristic
+        binding.tvDetailHabitat.text = keluarga.habitat
+        binding.tvDetailPerilaku.text = keluarga.perilaku
+        binding.tvDetailKlasifikasi.text = keluarga.klasifikasi
+    }
+
 
     companion object {
-        const val EXTRA_FAMILY = "extra_family"
+        const val EXTRA_KELUARGA = "extra_keluarga"
     }
 }

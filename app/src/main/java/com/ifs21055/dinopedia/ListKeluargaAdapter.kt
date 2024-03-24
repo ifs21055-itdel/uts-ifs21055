@@ -4,10 +4,10 @@ import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.ifs21055.dinopedia.databinding.ItemRowFamilyBinding
+import com.ifs21055.dinopedia.databinding.ItemRowKeluargaBinding
 
-class ListFamilyAdapter(private val listFamily: ArrayList<Family>) :
-    RecyclerView.Adapter<ListFamilyAdapter.ListViewHolder>() {
+class ListKeluargaAdapter(private val listKeluarga: ArrayList<Keluarga>) :
+    RecyclerView.Adapter<ListKeluargaAdapter.ListViewHolder>() {
     private lateinit var onItemClickCallback: OnItemClickCallback
     fun setOnItemClickCallback(onItemClickCallback:
                                OnItemClickCallback) {
@@ -16,24 +16,25 @@ class ListFamilyAdapter(private val listFamily: ArrayList<Family>) :
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType:
     Int): ListViewHolder {
         val binding =
-            ItemRowFamilyBinding.inflate(LayoutInflater.from(viewGroup.context),
+            ItemRowKeluargaBinding.inflate(LayoutInflater.from(viewGroup.context),
                 viewGroup, false)
         return ListViewHolder(binding)
     }
     @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        val family = listFamily[position]
-        holder.binding.ivItemFamily.setImageResource(family.icon)
-        holder.binding.tvItemFamily.text = family.name
+        val keluarga = listKeluarga[position]
+        holder.binding.ivItemFamily.setImageResource(keluarga.icon)
+        holder.binding.tvItemFamily.text = keluarga.name
         holder.itemView.setOnClickListener {
-            onItemClickCallback.onItemClicked(listFamily[holder.adapterPosition])
+            onItemClickCallback.onItemClicked(listKeluarga[holder.adapterPosition])
         }
     }
 
-    override fun getItemCount(): Int = listFamily.size
-    class ListViewHolder(var binding: ItemRowFamilyBinding) :
+
+    override fun getItemCount(): Int = listKeluarga.size
+    class ListViewHolder(var binding: ItemRowKeluargaBinding) :
         RecyclerView.ViewHolder(binding.root)
     interface OnItemClickCallback {
-        fun onItemClicked(data: Family)
+        fun onItemClicked(data: Keluarga)
     }
 }

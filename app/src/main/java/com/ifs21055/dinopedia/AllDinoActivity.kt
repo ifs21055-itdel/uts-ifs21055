@@ -7,40 +7,25 @@ import android.os.Bundle
 import android.os.Build
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Button
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.ifs21055.dinopedia.databinding.ActivityDinoBinding
+import com.ifs21055.dinopedia.databinding.ActivityAllDinoBinding
 
-
-class DinoActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityDinoBinding
+class AllDinoActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityAllDinoBinding
     private val dataDino = ArrayList<Dino>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityDinoBinding.inflate(layoutInflater)
+        binding = ActivityAllDinoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val btnDino = findViewById<Button>(R.id.alldino)
-        btnDino.setOnClickListener {
-            val intent = Intent(this, AllDinoActivity::class.java)
-            startActivity(intent)
-        }
-
-        // Atau menggunakan binding
-        binding.alldino.setOnClickListener {
-            val intent = Intent(this@DinoActivity, AllDinoActivity::class.java)
-            startActivity(intent)
-        }
 
         binding.rvDino.setHasFixedSize(false)
         dataDino.addAll(getListDino())
         showRecyclerList()
     }
-
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
@@ -116,11 +101,8 @@ class DinoActivity : AppCompatActivity() {
         val dataKelemahan =
             resources.getStringArray(R.array.dinos_kelemahan)
 
-        val startIndex = keluarga?.startIndex
-        val endIndex = keluarga?.endIndex
-
         val listDino = ArrayList<Dino>()
-        for (i in startIndex!! .. endIndex!!) {
+        for (i in dataName.indices) {
             val dino = Dino(
                 dataName[i],
                 dataIcon.getResourceId(i, -1),
@@ -141,7 +123,7 @@ class DinoActivity : AppCompatActivity() {
 
     private fun showSelectedDino(dino: Dino) {
         val intentWithData = Intent(
-            this@DinoActivity,
+            this@AllDinoActivity,
             DinoDetailActivity::class.java)
         intentWithData.putExtra (DinoDetailActivity.EXTRA_DINO, dino)
         startActivity(intentWithData)

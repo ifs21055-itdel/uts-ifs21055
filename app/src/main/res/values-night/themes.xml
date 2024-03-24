@@ -1,8 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <style name="Base.Theme.DinoPedia"
         parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimary">@color/orange</item>
         <item name="colorPrimaryDark">@color/blue</item>
+        <item name="android:windowBackground">@color/cyan</item>
+
     </style>
     <style name="Theme.DinoPedia"
         parent="Base.Theme.DinoPedia" />

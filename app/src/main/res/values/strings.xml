@@ -1,15 +1,15 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Dino Pedia</string>
-    <string name="info_family_icon">Ikon Family</string>
-    <string name="info_family_name">Nama Family</string>
-    <string name="info_family_desc">Deskripsi</string>
-    <string name="info_family_periode">Periode Hidup</string>
-    <string name="info_family_characteristic">Karakteristik Fisik</string>
-    <string name="info_family_habitat">Habitat</string>
-    <string name="info_family_perilaku">Perilaku</string>
-    <string name="info_family_klasifikasi">Klasifikasi</string>
+    <string name="info_keluarga_icon">Ikon keluarga</string>
+    <string name="info_keluarga_name">Nama keluarga</string>
+    <string name="info_keluarga_desc">Deskripsi</string>
+    <string name="info_keluarga_periode">Periode Hidup</string>
+    <string name="info_keluarga_characteristic">Karakteristik Fisik</string>
+    <string name="info_keluarga_habitat">Habitat</string>
+    <string name="info_keluarga_perilaku">Perilaku</string>
+    <string name="info_keluarga_klasifikasi">Klasifikasi</string>
 
-    <string-array name="familys_name">
+    <string-array name="keluargas_name">
         <item>Sauropodomorpha</item>
         <item>Theropoda</item>
         <item>Ornithopoda</item>
@@ -20,7 +20,7 @@
         <item>Saurischia</item>
     </string-array>
 
-    <string-array name="familys_icon">
+    <string-array name="keluargas_icon">
         <item>@drawable/sauropodomorpha</item>
         <item>@drawable/theropoda</item>
         <item>@drawable/ornithopoda</item>
@@ -31,7 +31,7 @@
         <item>@drawable/saurischia</item>
     </string-array>
 
-    <string-array name="familys_description">
+    <string-array name="keluargas_description">
         <item>Sauropodomorpha adalah kelompok dinosaurus yang terkenal dengan ukuran tubuhnya yang besar dan leher panjang. Mereka termasuk beberapa dinosaurus herbivora terbesar yang pernah hidup.</item>
         <item>Theropoda adalah kelompok dinosaurus yang umumnya dikenal sebagai pemakan daging. Mereka memiliki ciri khas sebagai pemburu yang efisien.</item>
         <item>Ornithopoda adalah kelompok dinosaurus herbivora yang dikenal dengan gigi-gigi yang mirip burung.</item>
@@ -42,7 +42,7 @@
         <item>Saurischia adalah kelompok dinosaurus yang memiliki ciri khas struktur panggul mirip reptil modern.</item>
     </string-array>
 
-    <string-array name="familys_periode">
+    <string-array name="keluargas_periode">
         <item>Periode Triassic hingga Jurassic.</item>
         <item>Mulai dari Periode Triassic hingga Kepunahan Cretaceous-Paleogene.</item>
         <item>Sebagian besar dari Periode Jurassic hingga Kepunahan Cretaceous-Paleogene.</item>
@@ -53,7 +53,7 @@
         <item>Mulai dari Periode Triassic hingga Kepunahan Cretaceous-Paleogene.</item>
     </string-array>
 
-    <string-array name="familys_characteristic">
+    <string-array name="keluargas_characteristic">
         <item>Tubuh besar, leher panjang, dan kepala kecil.</item>
         <item>Rangka yang ringan dan aerodinamis, kaki yang panjang, dan gigi tajam.</item>
         <item>Rangka yang ringan, kaki yang panjang, dan gigi berbentuk tanduk.</item>
@@ -64,7 +64,7 @@
         <item>Rangka yang besar, struktur panggul khas, dan kaki yang kuat.</item>
     </string-array>
 
-    <string-array name="familys_habitat">
+    <string-array name="keluargas_habitat">
         <item>Biasanya ditemukan di daerah berhutan dan lahan basah.</item>
         <item>Berbagai habitat termasuk daratan, hutan, dan rawa-rawa.</item>
         <item>Umumnya hidup di daerah terbuka seperti padang rumput dan dataran banjir.</item>
@@ -75,7 +75,7 @@
         <item>Beragam, dari hutan hingga daerah terbuka.</item>
     </string-array>
 
-    <string-array name="familys_perilaku">
+    <string-array name="keluargas_perilaku">
         <item>Mereka mungkin bergerombol atau berkelompok untuk mencari makanan.</item>
         <item>Biasanya adalah predator yang aktif, berburu dalam kelompok kecil atau sendiri.</item>
         <item>Mungkin hidup dalam kawanan besar untuk melindungi diri dari pemangsa.</item>
@@ -86,7 +86,7 @@
         <item>Beragam, tergantung pada subkelompoknya, termasuk pemangsa aktif dan herbivora pasif.</item>
     </string-array>
 
-    <string-array name="familys_klasifikasi">
+    <string-array name="keluargas_klasifikasi">
         <item>Subordo Sauropodomorpha dari ordo Saurischia.</item>
         <item>Subordo Theropoda dari ordo Saurischia.</item>
         <item>Infraordo Ornithopoda dari ordo Ornithischia.</item>
@@ -109,6 +109,29 @@
     <string name="info_dino_bobot">Bobot</string>
     <string name="info_dino_kelemahan">Kelemahan</string>
 
+
+    <string-array name="start_dino_array">
+        <item>0</item>
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+    </string-array>
+
+    <string-array name="end_dino_array">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>7</item>
+        <item>9</item>
+        <item>11</item>
+        <item>13</item>
+        <item>15</item>
+    </string-array>
+
     <string-array name="dinos_name">
         <item>Apatosaurus</item>
         <item>Brachiosaurus</item>
@@ -119,46 +142,49 @@
         <item>Triceratops</item>
         <item>Styracosaurus</item>
         <item>Stegosaurus</item>
-        <item>Ankylosaurus</item>
+        <item>Kentrosaurus</item>
+        <item>Nodosaurus</item>
         <item>Euoplocephalus</item>
-        <item>Pteranodon</item>
         <item>Quetzalcoatlus</item>
+        <item>Dimorphodon</item>
         <item>Allosaurus</item>
         <item>Diplodocus</item>
     </string-array>
 
     <string-array name="dinos_icon">
         <item>@drawable/apatosaurus</item>
-        <item>@drawable/apatosaurus</item>
-        <item>@drawable/apatosaurus</item>
-        <item>@drawable/apatosaurus</item>
-        <item>@drawable/apatosaurus</item>
-        <item>@drawable/apatosaurus</item>
-        <item>@drawable/apatosaurus</item>
-        <item>@drawable/apatosaurus</item>
-        <item>@drawable/apatosaurus</item>
-        <item>@drawable/apatosaurus</item>
-        <item>@drawable/apatosaurus</item>
-        <item>@drawable/apatosaurus</item>
-        <item>@drawable/apatosaurus</item>
-        <item>@drawable/apatosaurus</item>
-        <item>@drawable/apatosaurus</item>
+        <item>@drawable/brachiosaurus</item>
+        <item>@drawable/tyrannosaurusrex</item>
+        <item>@drawable/velociraptor</item>
+        <item>@drawable/parasaurolophus</item>
+        <item>@drawable/edmontosaurus</item>
+        <item>@drawable/triceratops</item>
+        <item>@drawable/styracosaurus</item>
+        <item>@drawable/stegosaurus</item>
+        <item>@drawable/kentrosaurus</item>
+        <item>@drawable/nodosaurus</item>
+        <item>@drawable/euoplocephalus</item>
+        <item>@drawable/quetzalcoatlus</item>
+        <item>@drawable/dimorphodon</item>
+        <item>@drawable/allosaurus</item>
+        <item>@drawable/diplodocus</item>
     </string-array>
 
     <string-array name="dinos_description">
-        <item>Apatosaurus adalah dinosaurus herbivora yang besar dengan leher panjang dan ekor yang pendek. Mereka memiliki tubuh besar dengan empat kaki kuat.</item>
-        <item>Brachiosaurus adalah dinosaurus raksasa yang memiliki leher panjang yang membantu mereka meraih makanan dari pohon-pohon tinggi.</item>
-        <item>Tyrannosaurus Rex adalah dinosaurus karnivora yang sangat besar dengan gigi dan rahang yang kuat, serta cakar yang besar.</item>
-        <item>Velociraptor adalah dinosaurus karnivora yang kecil dan gesit dengan cakar yang tajam dan gigi yang runcing.</item>
+        <item>Apatosaurus adalah dinosaurus berukuran besar dengan leher panjang dan badan yang besar. Mereka memiliki kaki yang kokoh dan ekor yang panjang. Kepalanya relatif kecil dibandingkan dengan ukuran tubuhnya. Meskipun sering diilustrasikan dengan lehernya yang tegak lurus, penelitian terbaru menunjukkan bahwa kemungkinan besar mereka memiliki leher yang lebih mendatar.</item>
+        <item>Brachiosaurus adalah seekor dinosaurus herbivora yang hidup pada periode Jurasik. Mereka memiliki leher panjang, kaki yang panjang dan besar, serta tubuh yang besar. Ciri khas Brachiosaurus adalah keberadaan lehernya yang panjang dan tegak lurus, yang memungkinkannya untuk meraih tumbuhan tinggi di pepohonan.</item>
+        <item>Tyrannosaurus rex memiliki tubuh besar dengan kepala yang besar dan mulut yang dilengkapi dengan gigi yang tajam. Tubuhnya dilapisi oleh sisik dan kulit yang keras. Salah satu ciri khasnya adalah lengan depan yang pendek dan kuat, namun memiliki cakar yang besar. Ekor panjang digunakan untuk menjaga keseimbangan saat bergerak.</item>
+        <item>Velociraptor adalah dinosaurus theropoda yang hidup sekitar 75 hingga 71 juta tahun yang lalu, pada periode Kapur Akhir. Dinosaurus ini terkenal karena cakar-cakar besar yang terdapat pada kaki belakangnya yang digunakan untuk menyerang dan memangsa mangsanya</item>
         <item>Parasaurolophus adalah dinosaurus herbivora yang memiliki crests besar di atas kepala mereka yang digunakan untuk berkomunikasi dan pengaturan suhu tubuh.</item>
         <item>Edmontosaurus adalah dinosaurus herbivora yang memiliki moncong yang runcing dan gigi yang digunakan untuk mengunyah tumbuhan.</item>
         <item>Triceratops adalah dinosaurus herbivora yang terkenal dengan tiga tanduk besar di atas kepala mereka dan perisai di bagian belakang tengkorak.</item>
         <item>Styracosaurus adalah dinosaurus herbivora yang memiliki tanduk-tanduk besar di atas tengkorak mereka, serta perisai di bagian belakangnya.</item>
         <item>Stegosaurus adalah dinosaurus herbivora yang terkenal dengan lempeng-lempeng besar di punggung mereka dan duri-duri di ekor mereka.</item>
-        <item>Ankylosaurus adalah dinosaurus herbivora yang memiliki lapisan tulang keras di seluruh tubuh mereka, serta tulang ekor yang berduri untuk pertahanan.</item>
-        <item>Euoplocephalus adalah dinosaurus herbivora yang memiliki tubuh yang ditutupi oleh lapisan tulang keras dan berduri untuk melindungi diri dari serangan predator.</item>
-        <item>Pteranodon adalah reptil terbang prasejarah yang memiliki sayap besar dan leher panjang yang memungkinkan mereka untuk berburu ikan di laut.</item>
+        <item>Kentrosaurus adalah salah satu dinosaurus dari kelompok Stegosauria yang hidup pada periode Jura Akhir sekitar 155-150 juta tahun yang lalu di wilayah yang sekarang menjadi Tanzania. Dinosaurus ini memiliki tubuh yang dilapisi oleh deretan besar dari tulang keratin yang membentuk dermal plate di sepanjang punggung dan sisi tubuhnya, memberikan perlindungan ekstra terhadap predator.</item>
+        <item>Nodosaurus adalah salah satu dinosaurus herbivora dari kelompok Ankylosauria yang hidup pada periode Kapur, sekitar 100 hingga 66 juta tahun yang lalu, di wilayah Amerika Utara. Dengan tubuh yang rendah dan pipih, Nodosaurus dilengkapi dengan perisai tulang yang kuat dan tonjolan-tunjolan di sisi tubuhnya, memberikan perlindungan tambahan dari serangan predator. Meskipun memiliki kepala yang relatif kecil, gigi-gigi tumpul Nodosaurus cocok untuk mengunyah tumbuhan seperti pakis, tanaman pohon rendah, dan lumut. </item>
+        <item>Euoplocephalus adalah dinosaurus herbivora yang memikat dari kelompok Ankylosauria. Dengan tubuh yang besar dan berat, mencapai sekitar 5 hingga 6 meter panjangnya, Euoplocephalus menonjol dengan perlindungan tulang yang kuat melapisi tubuhnya. Perisai yang terbentuk dari deretan tulang ini memberikan perlindungan yang efektif terhadap predator, sementara cakar-cakarnya yang kuat di kaki-kaki memberikan kemampuan untuk mencabik tumbuhan dan sebagai senjata pertahanan. Namun, fitur paling menonjol mungkin adalah gada tulang yang keras di ujung ekornya, yang digunakan untuk menghantam musuh yang mengancam. </item>
         <item>Quetzalcoatlus adalah salah satu pterosaur terbesar yang pernah hidup, dengan rentang sayap yang sangat besar yang memungkinkannya terbang jauh.</item>
+        <item>Dimorphodon adalah sejenis pterosaurus dengan tubuh kecil, kepala besar, dan gigi-gigi tajam di bagian depan serta gigi datar di belakang, yang hidup sekitar 190 juta tahun yang lalu pada periode Jura Awal, dan mereka dapat ditemukan di wilayah pesisir Eropa seperti Inggris, dimana mereka memanfaatkan kemampuan terbangnya untuk mencari makanan, yang mungkin terdiri dari ikan dan invertebrata kecil, meskipun ukurannya relatif kecil dengan panjang tubuh sekitar 1 meter, tinggi sekitar 30-50 sentimeter pada bahu, dan bobot sekitar 1-2 kilogram, dengan kelemahan terutama terletak pada rentan terhadap predator dan keterbatasan dalam penerbangan.</item>
         <item>Allosaurus adalah dinosaurus karnivora yang besar dan kuat dengan gigi yang tajam dan cakar yang kuat untuk menyerang mangsa.</item>
         <item>Diplodocus adalah dinosaurus herbivora yang sangat besar dengan leher yang panjang dan ekor yang pendek, serta tubuh yang ramping.</item>
     </string-array>
@@ -177,6 +203,7 @@
         <item>Lapisan tulang keras, tubuh berduri, herbivora.</item>
         <item>Sayap besar, leher panjang, tubuh kecil, reptil terbang.</item>
         <item>Rentang sayap besar, tubuh besar, reptil terbang.</item>
+        <item>Rentang sayap besar, tubuh besar, reptil terbang.</item>
         <item>Tubuh besar, cakar kuat, gigi tajam, karnivora.</item>
         <item>Tubuh panjang, leher panjang, ekor pendek, herbivora.</item>
     </string-array>
@@ -192,12 +219,14 @@
         <item>Ceratopsia</item>
         <item>Thyreophora</item>
         <item>Thyreophora</item>
-        <item>Thyreophora</item>
+        <item>Ankylosauria</item>
+        <item>Ankylosauria</item>
         <item>Pterosauria</item>
         <item>Pterosauria</item>
         <item>Saurischia</item>
         <item>Saurischia</item>
     </string-array>
+
 
     <string-array name="dinos_habitat">
         <item>Daerah daratan yang luas dengan vegetasi banyak.</item>
@@ -212,6 +241,7 @@
         <item>Padang rumput dan dataran rendah dengan vegetasi yang rendah.</item>
         <item>Hutan-hutan lebat dan daerah rawa-rawa dengan vegetasi melimpah.</item>
         <item>Pesisir laut dan daerah pantai dengan akses ke air.</item>
+        <item>Daerah dataran terbuka dan daerah pesisir dengan akses ke air.</item>
         <item>Daerah dataran terbuka dan daerah pesisir dengan akses ke air.</item>
         <item>Daerah hutan dan daerah berbukit dengan vegetasi melimpah.</item>
         <item>Daerah dataran tinggi dan daerah berbukit dengan vegetasi melimpah.</item>
@@ -231,6 +261,7 @@
         <item>Daun-daunan dan tanaman rendah.</item>
         <item>Ikan dan hewan kecil lainnya yang ditemukan di air.</item>
         <item>Diperkirakan memakan hewan kecil, mungkin ikan dan hewan darat kecil.</item>
+        <item>Diperkirakan memakan hewan kecil, mungkin ikan dan hewan darat kecil.</item>
         <item>Dinosaurus dan hewan besar lainnya.</item>
         <item>Tanaman tinggi dan daun-daunan.</item>
     </string-array>
@@ -247,7 +278,8 @@
         <item>Sekitar 9–12 meter.</item>
         <item>Sekitar 6–8 meter.</item>
         <item>Sekitar 6–7 meter.</item>
-        <item>Sekitar 6 meter (termasuk sayap).</item>
+        <item>Sekitar 6 meter.</item>
+        <item>Sekitar 10–11 meter (termasuk sayap).</item>
         <item>Sekitar 10–11 meter (termasuk sayap).</item>
         <item>Sekitar 8–9 meter.</item>
         <item>Sekitar 24–27 meter.</item>
@@ -267,6 +299,7 @@
         <item>Sekitar 2–2.5 meter.</item>
         <item>Sekitar 1–1.5 meter.</item>
         <item>Sekitar 3–4 meter.</item>
+        <item>Sekitar 3–4 meter.</item>
         <item>Sekitar 3–3.5 meter.</item>
         <item>Sekitar 4–5 meter.</item>
     </string-array>
@@ -285,6 +318,7 @@
         <item>Sekitar 2–3 ton.</item>
         <item>Sekitar 20–40 kg.</item>
         <item>Sekitar 200–250 kg.</item>
+        <item>Sekitar 200–250 kg.</item>
         <item>Sekitar 2–3 ton.</item>
         <item>Sekitar 10–16 ton.</item>
     </string-array>
@@ -302,6 +336,7 @@
         <item>Meskipun memiliki perlindungan yang kuat, Ankylosaurus masih rentan terhadap serangan predator dari bagian yang tidak dilindungi, seperti perut dan leher.</item>
         <item>Meskipun memiliki perlindungan yang kuat, Euoplocephalus masih rentan terhadap serangan predator yang kuat dari bagian yang tidak dilindungi.</item>
         <item>Rentan terhadap serangan predator saat di darat karena tidak bisa bergerak dengan cepat.</item>
+        <item>Rentan terhadap predator saat di darat karena ukurannya yang besar dan kemampuan bergerak yang terbatas.</item>
         <item>Rentan terhadap predator saat di darat karena ukurannya yang besar dan kemampuan bergerak yang terbatas.</item>
         <item>Meskipun kuat, Allosaurus rentan terhadap serangan dari dinosaurus lain yang lebih besar atau berkelompok.</item>
         <item>Meskipun besar, Diplodocus rentan terhadap predator karena kecepatannya yang lambat dan ukuran tubuhnya yang besar.</item>
